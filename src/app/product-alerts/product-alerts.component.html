@@ -4,3 +4,10 @@ product-alerts works!
 <p *ngIf="product && product.price > 700">
 <button>Notificarme</button>
 </p>
+<button (click)="share()">
+Compartir
+</button>
+
+<app-product-alerts
+[product]="product">
+</app-product-alerts>
